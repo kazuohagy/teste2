@@ -1,0 +1,21 @@
+<p>Mario {{meuBoleano}}</p>
+
+<button (click)="submit()">Mario</button>
+
+@if(devMostrarTitulo){
+    <h1>{{meuTitulo}}</h1>
+} @else {
+    <h2>Titulo oculto</h2>
+}
+
+@for(item of listItems; track item.id){
+    <p>{{item.nome}}</p>
+}
+
+@for(item of listItems; track item){
+    @if(item.id % 2 === 0){
+        <p>Item par: {{item.nome}}</p>
+    } @else {
+        <p>Item impar: {{item.nome}}</p>
+    }
+}
