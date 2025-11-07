@@ -12,10 +12,3 @@
     <p>{{item.nome}}</p>
 }
 
-@for(item of listItems; track item){
-    @if(item.id % 2 === 0){
-        <p>Item par: {{item.nome}}</p>
-    } @else {
-        <p>Item impar: {{item.nome}}</p>
-    }
-}

@@ -20,6 +20,6 @@ export class HomeComponent {
   }
   submit(){
     console.log("merda")
-
+    this.enviaFormularioService.enviaInformacaoPara("teste");
   }
 }
